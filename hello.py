@@ -273,3 +273,19 @@ print(formatted_date)
 # ```
 
 # These examples further illustrate the versatility of Python, demonstrating its capability to handle a wide range of programming tasks, from simple operations to complex data manipulations and beyond.
+
+
+# To modify a Python function to accept a variable number of arguments, you can use the `*args` syntax for positional arguments and `**kwargs` for keyword arguments. The `*args` will allow the function to accept any number of positional arguments as a tuple, while `**kwargs` allows it to accept an arbitrary number of keyword arguments as a dictionary.
+
+# Here's an example demonstrating how to modify a function to use both `*args` and `**kwargs`:
+
+#```type:Generated,lang:Python,path:,lines:0-0
+def my_function(*args, **kwargs):
+    print("Positional arguments:", args)
+    print("Keyword arguments:", kwargs)
+
+my_function(1, 2, 3, name="Adrenaline", age=30)
+#```
+
+
+# In this example, `my_function` can accept any number of positional arguments, which are accessible within the function as the tuple `args`, and any number of keyword arguments, which are accessible as the dictionary `kwargs`. This flexibility allows you to create functions that are highly adaptable to the calling context.
